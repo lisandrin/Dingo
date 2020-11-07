@@ -1,0 +1,70 @@
+.about-food{
+    width: 100%;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    padding: 80px 0;
+
+    .about-content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        @media (max-width:679px) {
+            grid-template-columns: 1fr;
+        } 
+
+        .picture{
+            display: inline;
+            width: 100%;
+            min-height: 502px;
+
+            img {
+                vertical-align: middle;
+                border-style: none;
+                max-width: 100%;
+            }
+        }
+
+        .text{
+            display: inline-block;
+            width: 100%;
+            min-height: 502px;
+            background-color: transparent;
+            padding-top: 10%;
+
+            @media (max-width:679px) {
+                padding: 20px;
+                text-align: center;
+            }
+
+            h5{
+                font-family: "Lora",serif;
+                font-size: 16px;
+                color: #777;
+                margin-bottom: 18px;
+            }
+
+            h2{
+                line-height: 1.25;
+                margin-bottom: 25px;
+                font-size: 40px;
+            }
+
+            h4{
+                margin-bottom: 25px;
+                color: #ff6426;
+                font-size: 24px;
+                font-weight: 300;
+            }
+
+            p {
+                font-family: "Lora",serif;
+                line-height: 1.7;
+                font-size: 15px;
+                margin-bottom: 0;
+                color: #555;
+            }
+        }
+    }
+}

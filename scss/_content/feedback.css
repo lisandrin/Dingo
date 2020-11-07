@@ -1,0 +1,107 @@
+.feedback {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+}
+
+.feedback .feedback-content {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 30% 70%;
+      grid-template-rows: 30% 70%;
+  padding-top: 50px;
+  height: 500px;
+}
+
+.feedback .feedback-content .text-head {
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 890px) {
+  .feedback .feedback-content .text-head {
+    padding-right: 0px;
+  }
+}
+
+.feedback .feedback-content .text-head p {
+  color: #567;
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+
+.feedback .feedback-content .text-head h2 {
+  font-size: 40px;
+  color: #333;
+  line-height: 1.25;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+.feedback .feedback-content .text-head h2::after {
+  width: 90px;
+  height: 10px;
+  position: absolute;
+  content: "";
+  bottom: 9px;
+  z-index: -1;
+  left: 0;
+  background-color: #ff6426;
+}
+
+.feedback .feedback-content .customers {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 1% 80%;
+      grid-template-columns: 20% 1% 80%;
+}
+
+.feedback .feedback-content .customers .stick {
+  height: 200px;
+  border-right: 2px solid #d9d9d9;
+}
+
+.feedback .feedback-content .customers .picture {
+  width: 100%;
+  min-height: 230px;
+  padding-top: 22px;
+}
+
+.feedback .feedback-content .customers .picture img {
+  width: 140px;
+  height: 140px;
+}
+
+.feedback .feedback-content .customers .text {
+  width: 100%;
+  min-height: 200px;
+  display: inline-block;
+  padding: 30px;
+}
+
+.feedback .feedback-content .customers .text p {
+  font-size: 20px;
+  font-family: "Lora", serif;
+  color: #555555;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.feedback .feedback-content .customers .text h4 {
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #2c3033;
+}
+
+.feedback .feedback-content .customers .text h4 span {
+  font-family: "Cardo", serif;
+  font-size: 14px;
+  color: #555555;
+}
+/*# sourceMappingURL=feedback.css.map */

@@ -1,0 +1,55 @@
+.video {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(./imgs/intro_video_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.video .video-content {
+  width: 100%;
+  display: inline-block;
+  min-height: 550px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video .video-content .text {
+  width: 100%;
+  height: 100%;
+  min-height: auto;
+  color: #fff;
+  padding: 20%;
+  display: inline-block;
+  position: relative;
+  text-align: center !important;
+}
+
+.video .video-content .text h3 {
+  font-size: 60px;
+  color: #fff;
+}
+
+.video .video-content .text button {
+  position: absolute;
+  top: 70%;
+  z-index: 10;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: block;
+  width: 32px;
+  height: 44px;
+  /* background: #fa183d; */
+  border-radius: 50%;
+  padding: 18px 20px 18px 28px;
+}
+/*# sourceMappingURL=intro-video.css.map */

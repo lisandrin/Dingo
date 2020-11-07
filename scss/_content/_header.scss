@@ -1,0 +1,108 @@
+.header{
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: transparent;
+
+    .header-content{
+        width: 100%;
+        display: flex;
+        background-color: none;
+        min-height: 60px;
+        align-items: center!important;
+
+        nav{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 20% 60% 20%;
+            min-height: 60px;
+            background-color: none;
+            padding: 22px 0px;
+
+            @media screen and (max-width:990px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .logo{
+                margin-right: 10%;
+                width: 180px; 
+                display: inline-block;
+                background-color: none;
+
+                img{
+                    padding-top: 0rem;
+                    padding-bottom: 0px;
+                    margin-right: 1rem;
+                    font-size: 1.25rem;
+                    line-height: inherit;
+                    white-space: nowrap; 
+                }
+            }
+
+            ul{
+                list-style: none;
+                background-color: none;
+                display: flex;
+                padding-right: 20%;
+
+                @media screen and (max-width:990px) {
+                    display: none;
+                }
+
+                li{
+                    text-decoration: none;
+                    list-style: none;
+                    padding: 25px;
+                    cursor: pointer;
+
+                    &:hover{
+                        color: #ff6426;
+                    }
+
+                    a{
+                        text-decoration: none;
+                        font-family: arial;
+                        color: #2c3033;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        transition: 0.5s;
+
+                        &:hover{
+                            color: #ff6426;
+                        }
+                    }
+                }
+            }
+
+            .menu-btn{
+                display: inline-block;
+                padding-top: 25px;
+
+                a{
+                    font-family: "Lora",serif;
+                    padding: 10.5px 25px;
+                    border-radius: 50px;
+                    background-color: #fff;
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: #ff6426;
+                    -webkit-transition: 0.5s;
+                    transition: 0.5s;
+                    text-transform: capitalize;
+                    text-decoration: none;
+
+                    &:hover{
+                        background-color: #ff6426;
+                        color: #fff;
+                    } 
+                }
+            }
+        }
+    }
+}

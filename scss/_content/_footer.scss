@@ -1,0 +1,110 @@
+footer{
+    width: 100%;
+    display: flex;
+    background-color: #f9f8f3;
+    padding: 100px 0px 25px;
+    min-height: 470px;
+
+    .footer{
+        width: 100%;
+        display: block;
+    }
+    .footer-content{
+        width: 100%;
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        column-gap: 10px;
+
+        @media (max-width:868px) {
+            grid-template-columns: 40% 40%;
+            column-gap: 30px;
+            row-gap: 30px;
+            text-align: center;
+        }
+
+        @media (max-width:452px) {
+            grid-template-columns: 1fr;
+            column-gap: 30px;
+            row-gap: 30px;
+            text-align: center; 
+        }
+
+        .card{
+            height: 204px;
+            background-color: none;
+
+            h4{
+                margin-bottom: 23px;
+                font-weight: 700;
+                font-size: 24px;
+            }
+
+            ul{
+                list-style: none;
+
+                li{
+                    padding: 5px;
+                    color: #555555;
+                    transition: 0.5s;
+                    font-size: 15px;
+                }
+            }
+
+            .btn{
+                width: 100%;
+                min-height: 40px;
+                display: flex;
+
+                input{
+                    width: 67%;
+                    height: 40px;
+                    margin-top: 23px;
+                    color: #999999;
+                    border: 0px solid transparent;
+                }
+                button{
+                    margin-top: 23px;
+                    background-color: #ff6426;
+                    color: #fff;
+                    width: 49px;
+                    border-radius: 2px;
+                    border-color: none;
+                    height: 40px;
+                }
+            }
+
+            .inner-card-text{
+                padding:5px;
+
+                span{
+                    color: #2c3033;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .copyright{
+        width: 100%;
+        display:grid;
+        grid-template-columns: 80% 20%;
+        padding-top: 25px;
+        margin-top: 83px;
+        border-top: 1px solid #e2e2e2;
+
+        @media (max-width:868px) {
+            grid-template-columns: 1fr;
+        }
+
+        @media (max-width:452px) {
+            grid-template-columns: 1fr;
+            padding: 10px;
+        }
+
+        .made-by{
+            text-align: left;
+            font-size: 15px;
+            color: #777777;
+        }
+    }
+}
