@@ -1,9 +1,5 @@
 @import 'layout';
-@import 'scss/content.scss';
+@import './common/mixin';
+@import 'scss/content.scss';       
 
-    
-
-// უნდა გავწერო layout-ში, თუ შეიძლება ასე გაკეთება?
-// %text {
-
-// } 
+// blog - card content ????????????

@@ -14,51 +14,16 @@
         content: none;
     } 
 
-    .members-content{
+    .members-content{ 
         width: 100%;
         display: grid;
-        grid-template-rows: 20% 80%;
+        grid-template-rows: 20% 80%; 
 
         @media (max-width: 692px) {
             grid-template-rows: 10% 80%;
         }
 
-        .text{
-            display: block;
-            padding-right: 60%;
-            margin-bottom: 70px;
-            align-items: flex-start;
-
-            @media (max-width: 890px) {
-                padding-right: 0px;
-            }
-
-            p{
-                color: #555555;
-                font-size: 16px;
-                margin-bottom: 7px;
-            }
-
-            h2{
-                font-size: 40px;
-                color: #2c3033;
-                line-height: 1.25;
-                font-weight: 700;
-                position: relative;
-                z-index: 1;
-
-                &::after{
-                    width: 90px;
-                    height: 10px;
-                    position: absolute;
-                    content: "";
-                    bottom: 9px;
-                    z-index: -1;
-                    left: 0;
-                    background-color: #ff6426;
-                }
-            }
-        }
+        @include head-text-h2;  
 
         .members-list{
             width: 100%;

@@ -10,7 +10,7 @@
         width: 100%;
         display: block; 
 
-        .text{
+        .menu-text{
             width: 100%;
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -23,36 +23,9 @@
                 text-align: center;
             }
 
-
-            .inner-text{
-                width: 100%;
-                display: block;
-
-                @media (max-width:991px) and (max-width:361px) {
-                    width: auto;
-                    text-align: center;
-                }
-
-                h2{
-                    font-size: 40px;
-                    color: #2c3033;
-                    line-height: 1.25;
-                    font-weight: 700;
-                    position: relative;
-                    z-index: 1;
-    
-                    &::after{
-                        width: 90px;
-                        height: 10px;
-                        position: absolute;
-                        content: "";
-                        bottom: 9px;
-                        z-index: -1;
-                        left: 0;
-                        background-color: #ff6426;
-                    }
-                }
-            }
+            @include head-text-h2{
+                padding-right: 0% !important;
+            } 
 
             ul{
                 width: 100%;
